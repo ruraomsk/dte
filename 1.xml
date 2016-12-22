@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table>
+    <format maxRecords="2147483647">
+        <fields>
+            <field description="Имя" name="name" type="S">
+                <validators>&lt;L=1 50&gt;&lt;R=\w+^^Имя может содержать только латинские буквы, цифры и символы подчеркивания&gt;</validators>
+                <defaultValue/>
+            </field>
+            <field description="Описание" name="description" type="S">
+                <validators>&lt;L=1 200&gt;&lt;R=[^\p{Cntrl}]*^^Описание может содержать только печатные символы&gt;</validators>
+                <defaultValue/>
+            </field>
+            <field description="Номер канала" name="canal" type="I">
+                <defaultValue>0</defaultValue>
+            </field>
+            <field description="Тип" name="type" type="I">
+                <selectionValues>
+                    <option description="Информация">0</option>
+                    <option description="Диагностика">1</option>
+                </selectionValues>
+                <defaultValue>0</defaultValue>
+            </field>
+            <field description="Идентификатор" name="uId" type="I">
+                <defaultValue>0</defaultValue>
+            </field>
+            <field description="Формат" name="format" type="I">
+                <selectionValues>
+                    <option description="Логический">0</option>
+                    <option description="2-байтный Int Signed">1</option>
+                    <option description="4-байтный Float">2</option>
+                </selectionValues>
+                <defaultValue>0</defaultValue>
+            </field>
+            <field description="Длина в байтах" name="lenght" type="I">
+                <selectionValues>
+                    <option description="Один байт">1</option>
+                    <option description="Два байта">2</option>
+                    <option description="Четыре байта">4</option>
+                </selectionValues>
+                <defaultValue>1</defaultValue>
+            </field>
+        </fields>
+    </format>
+    <records>
+        <record>
+            <value name="name">01_01_01_01_A</value>
+            <value name="description">01_01_01_01_A</value>
+            <value name="canal">1</value>
+            <value name="uId">257</value>
+            <value name="format">1</value>
+            <value name="lenght">2</value>
+        </record>
+        <record>
+            <value name="name">01_01_01_02_A</value>
+            <value name="description">01_01_01_02_A</value>
+            <value name="canal">1</value>
+            <value name="uId">513</value>
+            <value name="format">1</value>
+            <value name="lenght">2</value>
+        </record>
+        <record>
+            <value name="name">01_01_01_03_A</value>
+            <value name="description">01_01_01_03_A</value>
+            <value name="canal">1</value>
+            <value name="uId">769</value>
+            <value name="format">1</value>
+            <value name="lenght">2</value>
+        </record>
+        <record>
+            <value name="name">01_01_01_04_A</value>
+            <value name="description">01_01_01_04_A</value>
+            <value name="canal">1</value>
+            <value name="uId">1025</value>
+            <value name="format">1</value>
+            <value name="lenght">2</value>
+        </record>
+        <record>
+            <value name="name">01_01_01_05_A</value>
+            <value name="description">01_01_01_05_A</value>
+            <value name="canal">1</value>
+            <value name="uId">1281</value>
+            <value name="format">1</value>
+            <value name="lenght">2</value>
+        </record>
+        <record>
+            <value name="name">01_01_01_06_A</value>
+            <value name="description">01_01_01_06_A</value>
+            <value name="canal">1</value>
+            <value name="uId">1537</value>
+            <value name="format">1</value>
+            <value name="lenght">2</value>
+        </record>
+        <record>
+            <value name="name">01_01_01_07_A</value>
+            <value name="description">01_01_01_07_A</value>
+            <value name="canal">1</value>
+            <value name="uId">1793</value>
+            <value name="format">1</value>
+            <value name="lenght">2</value>
+        </record>
+        <record>
+            <value name="name">01_01_01_08_A</value>
+            <value name="description">01_01_01_08_A</value>
+            <value name="canal">1</value>
+            <value name="uId">2049</value>
+            <value name="format">1</value>
+            <value name="lenght">2</value>
+        </record>
+        <record>
+            <value name="name">01_01_01_09_A</value>
+            <value name="description">01_01_01_09_A</value>
+            <value name="canal">1</value>
+            <value name="uId">2305</value>
+            <value name="format">1</value>
+            <value name="lenght">2</value>
+        </record>
+        <record>
+            <value name="name">01_01_01_10_A</value>
+            <value name="description">01_01_01_10_A</value>
+            <value name="canal">1</value>
+            <value name="uId">2561</value>
+            <value name="format">1</value>
+            <value name="lenght">2</value>
+        </record>
+        <record>
+            <value name="name">01_01_01_11_A</value>
+            <value name="description">01_01_01_11_A</value>
+            <value name="canal">1</value>
+            <value name="uId">2817</value>
+            <value name="format">1</value>
+            <value name="lenght">2</value>
+        </record>
+        <record>
+            <value name="name">01_01_01_12_A</value>
+            <value name="description">01_01_01_12_A</value>
+            <value name="canal">1</value>
+            <value name="uId">3073</value>
+            <value name="format">1</value>
+            <value name="lenght">2</value>
+        </record>
+        <record>
+            <value name="name">01_01_01_13_A</value>
+            <value name="description">01_01_01_13_A</value>
+            <value name="canal">1</value>
+            <value name="uId">3329</value>
+            <value name="format">1</value>
+            <value name="lenght">2</value>
+        </record>
+        <record>
+            <value name="name">01_01_01_14_A</value>
+            <value name="description">01_01_01_14_A</value>
+            <value name="canal">1</value>
+            <value name="uId">3585</value>
+            <value name="format">1</value>
+            <value name="lenght">2</value>
+        </record>
+        <record>
+            <value name="name">01_01_01_15_A</value>
+            <value name="description">01_01_01_15_A</value>
+            <value name="canal">1</value>
+            <value name="uId">3841</value>
+            <value name="format">1</value>
+            <value name="lenght">2</value>
+        </record>
+        <record>
+            <value name="name">01_01_01_16_A</value>
+            <value name="description">01_01_01_16_A</value>
+            <value name="canal">1</value>
+            <value name="uId">4097</value>
+            <value name="format">1</value>
+            <value name="lenght">2</value>
+        </record>
+        <record>
+            <value name="name">01_01_02_01_D</value>
+            <value name="description">01_01_02_01_D</value>
+            <value name="canal">1</value>
+            <value name="uId">258</value>
+            <value name="format">1</value>
+            <value name="lenght">2</value>
+        </record>
+        <record>
+            <value name="name">01_01_02_02_D</value>
+            <value name="description">01_01_02_02_D</value>
+            <value name="canal">1</value>
+            <value name="uId">514</value>
+            <value name="format">1</value>
+            <value name="lenght">2</value>
+        </record>
+        <record>
+            <value name="name">01_01_02_03_D</value>
+            <value name="description">01_01_02_03_D</value>
+            <value name="canal">1</value>
+            <value name="uId">770</value>
+            <value name="format">1</value>
+            <value name="lenght">2</value>
+        </record>
+        <record>
+            <value name="name">01_01_02_04_D</value>
+            <value name="description">01_01_02_04_D</value>
+            <value name="canal">1</value>
+            <value name="uId">1026</value>
+            <value name="format">1</value>
+            <value name="lenght">2</value>
+        </record>
+        <record>
+            <value name="name">01_01_02_05_D</value>
+            <value name="description">01_01_02_05_D</value>
+            <value name="canal">1</value>
+            <value name="uId">1282</value>
+            <value name="format">1</value>
+            <value name="lenght">2</value>
+        </record>
+        <record>
+            <value name="name">01_01_02_06_D</value>
+            <value name="description">01_01_02_06_D</value>
+            <value name="canal">1</value>
+            <value name="uId">1538</value>
+            <value name="format">1</value>
+            <value name="lenght">2</value>
+        </record>
+        <record>
+            <value name="name">01_01_02_07_D</value>
+            <value name="description">01_01_02_07_D</value>
+            <value name="canal">1</value>
+            <value name="uId">1794</value>
+            <value name="format">1</value>
+            <value name="lenght">2</value>
+        </record>
+        <record>
+            <value name="name">01_01_02_08_D</value>
+            <value name="description">01_01_02_08_D</value>
+            <value name="canal">1</value>
+            <value name="uId">2050</value>
+            <value name="format">1</value>
+            <value name="lenght">2</value>
+        </record>
+        <record>
+            <value name="name">01_01_02_09_D</value>
+            <value name="description">01_01_02_09_D</value>
+            <value name="canal">1</value>
+            <value name="uId">2306</value>
+            <value name="format">1</value>
+            <value name="lenght">2</value>
+        </record>
+        <record>
+            <value name="name">01_01_02_10_D</value>
+            <value name="description">01_01_02_10_D</value>
+            <value name="canal">1</value>
+            <value name="uId">2562</value>
+            <value name="format">1</value>
+            <value name="lenght">2</value>
+        </record>
+        <record>
+            <value name="name">01_01_02_11_D</value>
+            <value name="description">01_01_02_11_D</value>
+            <value name="canal">1</value>
+            <value name="uId">2818</value>
+            <value name="format">1</value>
+            <value name="lenght">2</value>
+        </record>
+        <record>
+            <value name="name">01_01_02_12_D</value>
+            <value name="description">01_01_02_12_D</value>
+            <value name="canal">1</value>
+            <value name="uId">3074</value>
+            <value name="format">1</value>
+            <value name="lenght">2</value>
+        </record>
+        <record>
+            <value name="name">01_01_02_13_D</value>
+            <value name="description">01_01_02_13_D</value>
+            <value name="canal">1</value>
+            <value name="uId">3330</value>
+            <value name="format">1</value>
+            <value name="lenght">2</value>
+        </record>
+        <record>
+            <value name="name">01_01_02_14_D</value>
+            <value name="description">01_01_02_14_D</value>
+            <value name="canal">1</value>
+            <value name="uId">3586</value>
+            <value name="format">1</value>
+            <value name="lenght">2</value>
+        </record>
+        <record>
+            <value name="name">01_01_02_15_D</value>
+            <value name="description">01_01_02_15_D</value>
+            <value name="canal">1</value>
+            <value name="uId">3842</value>
+            <value name="format">1</value>
+            <value name="lenght">2</value>
+        </record>
+        <record>
+            <value name="name">01_01_02_16_D</value>
+            <value name="description">01_01_02_16_D</value>
+            <value name="canal">1</value>
+            <value name="uId">4098</value>
+            <value name="format">1</value>
+            <value name="lenght">2</value>
+        </record>
+        <record>
+            <value name="name">01_01_02_17_D</value>
+            <value name="description">01_01_02_17_D</value>
+            <value name="canal">1</value>
+            <value name="uId">4354</value>
+            <value name="format">1</value>
+            <value name="lenght">2</value>
+        </record>
+        <record>
+            <value name="name">01_01_02_18_D</value>
+            <value name="description">01_01_02_18_D</value>
+            <value name="canal">1</value>
+            <value name="uId">4610</value>
+            <value name="format">1</value>
+            <value name="lenght">2</value>
+        </record>
+        <record>
+            <value name="name">01_01_02_19_D</value>
+            <value name="description">01_01_02_19_D</value>
+            <value name="canal">1</value>
+            <value name="uId">4866</value>
+            <value name="format">1</value>
+            <value name="lenght">2</value>
+        </record>
+        <record>
+            <value name="name">01_01_02_20_D</value>
+            <value name="description">01_01_02_20_D</value>
+            <value name="canal">1</value>
+            <value name="uId">5122</value>
+            <value name="format">1</value>
+            <value name="lenght">2</value>
+        </record>
+        <record>
+            <value name="name">01_01_02_21_D</value>
+            <value name="description">01_01_02_21_D</value>
+            <value name="canal">1</value>
+            <value name="uId">5378</value>
+            <value name="format">1</value>
+            <value name="lenght">2</value>
+        </record>
+        <record>
+            <value name="name">01_01_02_22_D</value>
+            <value name="description">01_01_02_22_D</value>
+            <value name="canal">1</value>
+            <value name="uId">5634</value>
+            <value name="format">1</value>
+            <value name="lenght">2</value>
+        </record>
+        <record>
+            <value name="name">01_01_02_23_D</value>
+            <value name="description">01_01_02_23_D</value>
+            <value name="canal">1</value>
+            <value name="uId">5890</value>
+            <value name="format">1</value>
+            <value name="lenght">2</value>
+        </record>
+        <record>
+            <value name="name">01_01_02_24_D</value>
+            <value name="description">01_01_02_24_D</value>
+            <value name="canal">1</value>
+            <value name="uId">6146</value>
+            <value name="format">1</value>
+            <value name="lenght">2</value>
+        </record>
+        <record>
+            <value name="name">01_01_02_25_D</value>
+            <value name="description">01_01_02_25_D</value>
+            <value name="canal">1</value>
+            <value name="uId">6402</value>
+            <value name="format">1</value>
+            <value name="lenght">2</value>
+        </record>
+        <record>
+            <value name="name">01_01_02_26_D</value>
+            <value name="description">01_01_02_26_D</value>
+            <value name="canal">1</value>
+            <value name="uId">6658</value>
+            <value name="format">1</value>
+            <value name="lenght">2</value>
+        </record>
+        <record>
+            <value name="name">01_01_02_27_D</value>
+            <value name="description">01_01_02_27_D</value>
+            <value name="canal">1</value>
+            <value name="uId">6914</value>
+            <value name="format">1</value>
+            <value name="lenght">2</value>
+        </record>
+        <record>
+            <value name="name">01_01_02_28_D</value>
+            <value name="description">01_01_02_28_D</value>
+            <value name="canal">1</value>
+            <value name="uId">7170</value>
+            <value name="format">1</value>
+            <value name="lenght">2</value>
+        </record>
+        <record>
+            <value name="name">01_01_02_29_D</value>
+            <value name="description">01_01_02_29_D</value>
+            <value name="canal">1</value>
+            <value name="uId">7426</value>
+            <value name="format">1</value>
+            <value name="lenght">2</value>
+        </record>
+        <record>
+            <value name="name">01_01_02_30_D</value>
+            <value name="description">01_01_02_30_D</value>
+            <value name="canal">1</value>
+            <value name="uId">7682</value>
+            <value name="format">1</value>
+            <value name="lenght">2</value>
+        </record>
+        <record>
+            <value name="name">01_01_02_31_D</value>
+            <value name="description">01_01_02_31_D</value>
+            <value name="canal">1</value>
+            <value name="uId">7938</value>
+            <value name="format">1</value>
+            <value name="lenght">2</value>
+        </record>
+        <record>
+            <value name="name">01_01_02_32_D</value>
+            <value name="description">01_01_02_32_D</value>
+            <value name="canal">1</value>
+            <value name="uId">8194</value>
+            <value name="format">1</value>
+            <value name="lenght">2</value>
+        </record>
+        <record>
+            <value name="name">01_01_02_33_D</value>
+            <value name="description">01_01_02_33_D</value>
+            <value name="canal">1</value>
+            <value name="uId">8450</value>
+            <value name="format">1</value>
+            <value name="lenght">2</value>
+        </record>
+        <record>
+            <value name="name">01_01_02_34_D</value>
+            <value name="description">01_01_02_34_D</value>
+            <value name="canal">1</value>
+            <value name="uId">8706</value>
+            <value name="format">1</value>
+            <value name="lenght">2</value>
+        </record>
+        <record>
+            <value name="name">01_01_02_35_D</value>
+            <value name="description">01_01_02_35_D</value>
+            <value name="canal">1</value>
+            <value name="uId">8962</value>
+            <value name="format">1</value>
+            <value name="lenght">2</value>
+        </record>
+        <record>
+            <value name="name">01_01_02_36_D</value>
+            <value name="description">01_01_02_36_D</value>
+            <value name="canal">1</value>
+            <value name="uId">9218</value>
+            <value name="format">1</value>
+            <value name="lenght">2</value>
+        </record>
+        <record>
+            <value name="name">01_01_02_37_D</value>
+            <value name="description">01_01_02_37_D</value>
+            <value name="canal">1</value>
+            <value name="uId">9474</value>
+            <value name="format">1</value>
+            <value name="lenght">2</value>
+        </record>
+        <record>
+            <value name="name">01_01_02_38_D</value>
+            <value name="description">01_01_02_38_D</value>
+            <value name="canal">1</value>
+            <value name="uId">9730</value>
+            <value name="format">1</value>
+            <value name="lenght">2</value>
+        </record>
+        <record>
+            <value name="name">01_01_02_39_D</value>
+            <value name="description">01_01_02_39_D</value>
+            <value name="canal">1</value>
+            <value name="uId">9986</value>
+            <value name="format">1</value>
+            <value name="lenght">2</value>
+        </record>
+        <record>
+            <value name="name">01_01_02_40_D</value>
+            <value name="description">01_01_02_40_D</value>
+            <value name="canal">1</value>
+            <value name="uId">10242</value>
+            <value name="format">1</value>
+            <value name="lenght">2</value>
+        </record>
+    </records>
+</table>
