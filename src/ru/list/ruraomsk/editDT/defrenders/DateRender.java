@@ -7,6 +7,8 @@ package ru.list.ruraomsk.editDT.defrenders;
 
 import java.awt.Color;
 import java.awt.Component;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import javax.swing.JLabel;
 import javax.swing.JTable;
 import javax.swing.table.TableCellRenderer;
@@ -32,7 +34,8 @@ public class DateRender extends JLabel implements TableCellRenderer
         } else{
             setOpaque(false);
         }
-        setText(value.toString());
+        SimpleDateFormat df = new SimpleDateFormat("dd/MM/yy HH:mm:ss.S ");
+        setText(df.format(value));
         return this;
     }
     

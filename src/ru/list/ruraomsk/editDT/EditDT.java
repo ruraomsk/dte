@@ -22,7 +22,7 @@ import javax.swing.table.TableColumnModel;
  *
  * @author Русинов Юрий <ruraomsk@list.ru>
  */
-public class EditDT extends JDialog
+public class EditDT 
 {
 
     DataTable mainDT;
@@ -44,17 +44,18 @@ public class EditDT extends JDialog
     JTable table;
     Sorted sorted;
     public int status = -1;
-
+    JPanel own;
     public EditDT(JPanel own, DataTable dt, boolean onlyread) throws HeadlessException
     {
 //        super(own, dt.getDescription());
+        this.own=own;
         this.onlyread = onlyread;
-        this.setMinimumSize(Util.DIM);
-        this.setSize(Util.DIM);
+//        this.setMinimumSize(Util.DIM);
+//        this.setSize(Util.DIM);
         mainDT = dt;
         allback();
 //        setDefaultCloseOperation(EXIT_ON_CLOSE);
-        this.setLayout(new BoxLayout(getContentPane(), BoxLayout.Y_AXIS));
+        own.setLayout(new BoxLayout(own, BoxLayout.Y_AXIS));
 
         dm = new DataTableModel(workDT);
         if (this.onlyread) {
@@ -131,13 +132,19 @@ public class EditDT extends JDialog
 //        bottom.set
 //        bottom.setLayout(new BoxLayout(top, X_AXIS));
 //        JPanel editor=new JPanel();
-        this.add(top);
-        this.add(center);
-        this.add(bottom);
-        this.setVisible(true);
+        own.add(top);
+        own.add(center);
+        own.add(bottom);
+        own.setVisible(true);
 //        setSize(dim);
     }
-
+    public synchronized DataTable getDataTable(){
+        status=-1;
+        return mainDT;
+    }
+    public boolean isFinished(){
+        return status==0;
+    }
     public void newdata()
     {
         if (!onlyread) {
@@ -183,7 +190,7 @@ public class EditDT extends JDialog
 
         }
     }
-
+    
     private class PressedOk implements ActionListener
     {
 
@@ -192,7 +199,7 @@ public class EditDT extends JDialog
         {
             mainDT = workDT.clone();
             DataTableReplication.copy(workDT, mainDT);
-            setVisible(false);
+            own.setVisible(false);
             status = 0;
 
         }
@@ -204,7 +211,7 @@ public class EditDT extends JDialog
         @Override
         public void actionPerformed(ActionEvent e)
         {
-            setVisible(false);
+            own.setVisible(false);
             status = 1;
         }
     }

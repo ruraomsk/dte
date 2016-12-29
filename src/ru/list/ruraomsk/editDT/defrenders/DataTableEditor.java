@@ -56,11 +56,12 @@ public class DataTableEditor extends AbstractCellEditor
             jtext.setText("DataTable is empty");
             return jtext;
         }
+        JFrame frame=new JFrame("Data Table");
         editDT=new JPanel();
-        editDT.setSize(Util.DIM);
+        frame.setSize(Util.DIM);
         EditDT edit=new EditDT(editDT,this.value,false);
-        editDT.add(edit);
-        editDT.setVisible(true);
+        frame.add(editDT);
+        frame.setVisible(true);
         return jtext;
     }
 }

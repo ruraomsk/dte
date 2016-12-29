@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ri.list.ruraomsk.dte;
+package ru.list.ruraomsk.dte;
 
 import com.tibbo.aggregate.common.datatable.DataTable;
 import java.awt.Dimension;
@@ -43,12 +43,12 @@ public class Dte extends JFrame
 
     private Dte()
     {
-        DataTable dt = null;
+        DataTable dt;
         Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
         screenSize.height -= 50;
         screenSize.width -= 50;
-        setSize(screenSize);
-        setDefaultCloseOperation(EXIT_ON_CLOSE);
+        this.setSize(screenSize);
+        this.setDefaultCloseOperation(EXIT_ON_CLOSE);
         if (nametable == null) {
             JFileChooser jfile = new JFileChooser();
             jfile.setDialogTitle("Укажите файл для загрузки");

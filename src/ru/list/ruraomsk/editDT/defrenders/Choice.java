@@ -7,9 +7,8 @@ package ru.list.ruraomsk.editDT.defrenders;
 
 /**
  *
- * @author Русинов Юрий <ruraomsk@list.ru>
+ * @author Yury Rusinov <ruraomsl@list.ru at Automatics E>
  */
-public class Choice
-{
+public class Choice {
     
 }
