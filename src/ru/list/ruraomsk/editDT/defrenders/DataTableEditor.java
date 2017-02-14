@@ -59,6 +59,7 @@ public class DataTableEditor extends AbstractCellEditor
         JFrame frame=new JFrame("Data Table");
         editDT=new JPanel();
         frame.setSize(Util.DIM);
+        frame.setLocation(30,30);
         EditDT edit=new EditDT(editDT,this.value,false);
         frame.add(editDT);
         frame.setVisible(true);
