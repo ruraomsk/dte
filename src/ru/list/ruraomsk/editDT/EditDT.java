@@ -143,7 +143,7 @@ public class EditDT
         return mainDT;
     }
     public boolean isFinished(){
-        return status==0;
+        return status>=0;
     }
     public void newdata()
     {
@@ -160,6 +160,7 @@ public class EditDT
 
     final void allback()
     {
+        if(mainDT==null) return;
         workDT = mainDT.clone();
         DataTableReplication.copy(mainDT, workDT);
     }
